@@ -4,9 +4,29 @@ html {
   font-size: 16px;
 }
 
+.flex {
+  display: flex;
+  align-items: center;
+}
+
 .mobile {
   display: none;
 }
+
+h2 {
+  font-family: "Oswald", sans-serif;
+  font-size: 2.2rem;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+h3 {
+  font-family: "Open Sans", sans-serif;
+  font-size: 1.2rem;
+  font-weight: 600;
+}
+
+/*--------------------------- Header --------------------------*/
 
 header {
   height: 4rem;
@@ -15,11 +35,6 @@ header {
 
 .navigation {
   justify-content: space-between;
-}
-
-.flex {
-  display: flex;
-  align-items: center;
 }
 
 .desktop-nav ul {
@@ -44,8 +59,50 @@ header {
   text-transform: uppercase;
   font-weight: 300;
   font-size: 1.2rem;
+  color: #8244fc;
 }
 
 .logo h1 span {
-  font-weight: bold
+  font-weight: bold;
+  color: #000;
+}
+
+/*--------------------------- Hero Section ----------------------*/
+
+.hero {
+  background: #f2f8ff;
+}
+
+.hero h3 {
+  margin: 1.5rem 0;
+}
+
+.left {
+  width: 60%;
+  padding: 2rem 1.5rem;
+}
+
+.container img {
+  width: 100%;
+}
+
+.right {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-direction: column;
+  width: 40%;
+}
+
+.hero a {
+  color: #fff;
+  width: 80%;
+  background: #8244fc;
+  text-align: center;
+  padding: 0.5rem 0;
+  font-family: "Oswald", sans-serif;
+  font-weight: 400;
+  text-transform: uppercase;
+  font-size: 0.9rem;
+  text-decoration: none;
 }
