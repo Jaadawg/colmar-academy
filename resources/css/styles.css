@@ -26,6 +26,30 @@ h3 {
   font-weight: 600;
 }
 
+p, h6, .info-container a {
+  font-family: "Open Sans", sans-serif;
+  font-size: 0.9rem;
+  font-weight: 400;
+  line-height: 1.4;
+}
+
+h6 {
+  font-weight: 600;
+  font-size: 0.8rem;
+}
+
+.left {
+  width: 60%;
+  padding: 2rem 1.5rem;
+}
+
+.right {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  width: 40%;
+}
+
 /*--------------------------- Header --------------------------*/
 
 header {
@@ -52,6 +76,11 @@ header {
 .desktop-nav ul li a {
   text-decoration: none;
   color: #000;
+  transition: color 0.1s ease-in-out;
+}
+
+.desktop-nav ul li a:hover {
+  color: #8244fc;
 }
 
 .logo h1 {
@@ -77,21 +106,8 @@ header {
   margin: 1.5rem 0;
 }
 
-.left {
-  width: 60%;
-  padding: 2rem 1.5rem;
-}
-
 .container img {
   width: 100%;
-}
-
-.right {
-  display: flex;
-  justify-content: center;
-  align-items: flex-start;
-  flex-direction: column;
-  width: 40%;
 }
 
 .hero a {
@@ -105,4 +121,69 @@ header {
   text-transform: uppercase;
   font-size: 0.9rem;
   text-decoration: none;
+}
+
+.hero .right {
+  padding-right: 1rem;
+}
+
+/*-------------------------- Articles Section ----------------------*/
+
+.articles h2 {
+  margin-top: 2rem;
+  margin-bottom: 1.5rem;
+}
+
+.articles .left p {
+  margin-bottom: 1.5rem;
+}
+
+.articles .container {
+  height: 100%;
+}
+
+.side-article {
+  flex-direction: row;
+  padding: 1rem;
+  border: 1px solid #eee;
+}
+
+.articles .right p {
+  margin: 1.5rem 0;
+}
+
+.side-article .info-container p {
+  margin: 0.5rem 0;
+}
+
+.info-container {
+  width: 65%;
+  height: auto;
+  padding-left: 1rem;
+}
+
+.info-container a {
+  text-decoration: none;
+  color: #8244fc;
+  font-weight: 600;
+  font-size: 0.8rem;
+}
+
+.img-container {
+  width: 35%;
+  height: auto;
+}
+
+.img-container img {
+  width: 100%;
+}
+
+.side-article:last-child {
+  background: #f2f8ff;
+}
+
+/*-------------------------- Courses Section -----------------------*/
+
+.courses {
+  
 }
