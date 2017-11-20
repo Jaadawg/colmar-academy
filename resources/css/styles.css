@@ -13,6 +13,18 @@ html {
   display: none;
 }
 
+@media only screen and (max-width: 480px) {
+
+  .mobile {
+    display: block;
+  }
+
+  .hidden {
+    display: none;
+  }
+
+}
+
 h2 {
   font-family: "Oswald", sans-serif;
   font-size: 2.2rem;
@@ -49,6 +61,22 @@ h6 {
   justify-content: center;
   flex-direction: column;
   width: 40%;
+}
+
+@media only screen and (max-width: 640px) {
+
+  h2 {
+    font-size: 1.8rem;
+  }
+
+  h3 {
+    font-size: 1rem;
+  }
+
+  p, h6, .info-container a, footer ul li {
+    font-size: 0.8rem;
+  }
+
 }
 
 /*--------------------------- Header --------------------------*/
@@ -101,6 +129,14 @@ header {
 
 .hero {
   background: #f2f8ff;
+}
+
+@media only screen and (max-width: 480px) {
+
+  .hero {
+    flex-direction: column;
+  }
+
 }
 
 .hero h3 {
@@ -179,8 +215,16 @@ header {
   width: 100%;
 }
 
-.side-article:last-child {
+.selected-article {
   background: #f2f8ff;
+}
+
+.articles.flex {
+  align-items: flex-start;
+}
+
+.side-article-list {
+  margin-top: 2rem;
 }
 
 /*-------------------------- Courses Section -----------------------*/
