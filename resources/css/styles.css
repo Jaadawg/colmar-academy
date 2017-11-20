@@ -26,7 +26,7 @@ h3 {
   font-weight: 600;
 }
 
-p, h6, .info-container a {
+p, h6, .info-container a, footer ul li {
   font-family: "Open Sans", sans-serif;
   font-size: 0.9rem;
   font-weight: 400;
@@ -190,7 +190,7 @@ header {
   padding: 2rem 4.5rem;
 }
 
-.courses h2, .thesis h2 {
+.courses h2 {
   text-align: center;
   margin-bottom: 2rem;
 }
@@ -231,6 +231,42 @@ header {
 
 /*-------------------------- Thesis Section ------------------------*/
 
+.thesis-items {
+  align-items: flex-start;
+}
+
 .thesis {
   padding: 2rem 0;
+}
+
+.thesis h2 {
+  text-align: center;
+}
+
+video {
+  width: 100%;
+  height: auto;
+}
+
+.thesis h3 {
+  margin: 1.5rem 0 0.5rem;
+}
+
+.thesis-right {
+  margin-top: 2rem;
+}
+
+/*-------------------------- Footer Section ------------------------*/
+
+footer {
+  border-top: 1px solid #eee;
+  padding: 1rem 1.5rem 3rem;
+}
+
+footer.flex {
+  justify-content: space-between;
+}
+
+footer ul li:last-child {
+  margin-left: 0.5rem;
 }
