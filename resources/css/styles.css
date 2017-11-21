@@ -1,5 +1,9 @@
 @import url('https://fonts.googleapis.com/css?family=Open+Sans:400,600|Oswald:300,400,700');
 
+* {
+  box-sizing: border-box;
+}
+
 html {
   font-size: 16px;
 }
@@ -79,6 +83,20 @@ h6 {
 
 }
 
+@media only screen and (max-width: 480px) {
+
+  .left {
+    width: 100%;
+    padding: 0;
+  }
+
+  .right {
+    width: 100%;
+    padding: 1rem;
+  }
+
+}
+
 /*--------------------------- Header --------------------------*/
 
 header {
@@ -131,20 +149,13 @@ header {
   background: #f2f8ff;
 }
 
-@media only screen and (max-width: 480px) {
-
-  .hero {
-    flex-direction: column;
-  }
-
-}
-
 .hero h3 {
   margin: 1.5rem 0;
 }
 
 .container img {
   width: 100%;
+  height: auto;
 }
 
 .hero a {
@@ -158,10 +169,27 @@ header {
   text-transform: uppercase;
   font-size: 0.9rem;
   text-decoration: none;
+  align-self: center;
 }
 
-.hero .right {
-  padding-right: 1rem;
+@media only screen and (max-width: 480px) {
+
+  .hero {
+    flex-direction: column;
+  }
+
+  .hero .right {
+    margin-top: 2rem;
+  }
+
+  .hero h3 {
+    margin: 2rem 0 1.5rem;
+  }
+
+  .hero a {
+    width: 100%;
+  }
+
 }
 
 /*-------------------------- Articles Section ----------------------*/
@@ -227,6 +255,35 @@ header {
   margin-top: 2rem;
 }
 
+@media only screen and (max-width: 480px) {
+
+  .side-article {
+    flex-direction: column;
+    padding: 0;
+    border: none;
+  }
+
+  .img-container {
+    width: 100%;
+    height: auto;
+  }
+
+  .side-article-list {
+    margin-top: 0;
+  }
+
+  .selected-article {
+    background: #fff;
+  }
+
+  .info-container {
+    width: 100%;
+    height: auto;
+    padding: 1rem 0 2rem 1rem;
+  }
+
+}
+
 /*-------------------------- Courses Section -----------------------*/
 
 .courses {
@@ -273,6 +330,33 @@ header {
   margin: 0;
 }
 
+@media only screen and (max-width: 480px) {
+
+  .courses {
+    background: #fff;
+    padding: 1rem;
+    border-top: 1px solid #eee;
+  }
+
+  .courses h2 {
+    text-align: center;
+    margin: 1rem 0 2rem;
+  }
+
+  .course-item {
+    background: #f2f8ff;
+    width: 100%;
+    height: auto;
+    margin: 0 0 0.5rem 0;
+    box-shadow: none;
+  }
+
+  .course-info h3 {
+    padding: 1rem 0 1.5rem 1rem;
+  }
+
+}
+
 /*-------------------------- Thesis Section ------------------------*/
 
 .thesis-items {
@@ -300,6 +384,31 @@ video {
   margin-top: 2rem;
 }
 
+@media only screen and (max-width: 480px) {
+
+  .thesis {
+    margin-top: 1rem;
+    padding: 2rem 1rem;
+    border-top: 1px solid #eee;
+  }
+
+  .thesis-items {
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+  }
+
+  .thesis-right{
+    padding: 0;
+    margin: 0;
+  }
+
+  .thesis h2 {
+    margin-bottom: 2rem;
+  }
+
+}
+
 /*-------------------------- Footer Section ------------------------*/
 
 footer {
@@ -313,4 +422,12 @@ footer.flex {
 
 footer ul li:last-child {
   margin-left: 0.5rem;
+}
+
+@media only screen and (max-width: 480px) {
+
+  footer {
+    padding: 1rem;
+  }
+
 }
