@@ -169,7 +169,6 @@ header {
   text-transform: uppercase;
   font-size: 0.9rem;
   text-decoration: none;
-  align-self: center;
 }
 
 @media only screen and (max-width: 480px) {
@@ -188,6 +187,7 @@ header {
 
   .hero a {
     width: 100%;
+    align-self: center;
   }
 
 }
